@@ -20,7 +20,7 @@ The default usage imports a wrapped component that loads the google recaptcha sc
 
 Code Example:
 ```jsx
-import ReCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha-enterprise";
 
 function onChange(value) {
   console.log("Captcha value:", value);
@@ -97,7 +97,7 @@ See the [reCAPTCHA documentation](https://developers.google.com/recaptcha/docs/i
 With the invisible option, you need to handle things a bit differently. You will need to call the `execute` method yourself.
 
 ```jsx
-import ReCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha-enterprise";
 
 const recaptchaRef = React.createRef();
 
@@ -117,7 +117,7 @@ ReactDOM.render(
 Additionally, you can use the `executeAsync` method to use a promise based approach.
 
 ```jsx
-import ReCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha-enterprise";
 
 
 const ReCAPTCHAForm = (props) => {
@@ -167,7 +167,7 @@ window.recaptchaOptions = {
 You can also use the barebone components doing the following. Using that component will oblige you to manage the grecaptcha dep and load the script by yourself.
 
 ```jsx
-import { ReCAPTCHA } from "react-google-recaptcha";
+import { ReCAPTCHA } from "react-google-recaptcha-enterprise";
 
 const grecaptchaObject = window.grecaptcha // You must provide access to the google grecaptcha object.
 
@@ -210,18 +210,6 @@ to your css.
 ## Notes on Requirements
 At least `React@16.4.1` is required due to `forwardRef` usage in the dependency [react-async-script](https://github.com/dozoisch/react-async-script).
 
-## Notes
-
-Pre `1.0.0` and `React < 16.4.1` support details in [0.14.0](https://github.com/dozoisch/react-google-recaptcha/tree/v0.14.0).
-
-[travis.img]: https://travis-ci.org/dozoisch/react-google-recaptcha.svg?branch=master
-[travis.url]: https://travis-ci.org/dozoisch/react-google-recaptcha
-[npm.img]: https://badge.fury.io/js/react-google-recaptcha.svg
-[npm.url]: http://badge.fury.io/js/react-google-recaptcha
-[npm.dl.img]: https://img.shields.io/npm/dm/react-google-recaptcha.svg
-[npm.dl.url]: https://www.npmjs.com/package/react-google-recaptcha
-[deps.img]: https://david-dm.org/dozoisch/react-google-recaptcha.svg
-[deps.url]: https://david-dm.org/dozoisch/react-google-recaptcha
 
 [reCAPTCHA]: https://developers.google.com/recaptcha/docs/display
 [signup]: http://www.google.com/recaptcha/admin
