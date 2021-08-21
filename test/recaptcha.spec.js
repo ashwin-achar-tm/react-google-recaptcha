@@ -21,7 +21,7 @@ describe("ReCAPTCHA", () => {
     expect(ReactDOM.findDOMNode(instance).className).toBe(props.className);
   });
 
-  it("should call grecaptcha.render, when it is already loaded", () => {
+  it("should call grecaptcha.enterprise.render, when it is already loaded", () => {
     return new Promise((resolve) => {
       const grecaptchaMock = {
         render(node, options) {
@@ -36,7 +36,7 @@ describe("ReCAPTCHA", () => {
       expect(instance).toBeTruthy();
     });
   });
-  it("reset, should call grecaptcha.reset with the widget id", () => {
+  it("reset, should call grecaptcha.enterprise.reset with the widget id", () => {
     const WIDGET_ID = "someWidgetId";
     const grecaptchaMock = {
       render() {
@@ -56,7 +56,7 @@ describe("ReCAPTCHA", () => {
     ReCaptchaRef.current.reset();
     expect(grecaptchaMock.reset).toBeCalledWith(WIDGET_ID);
   });
-  it("execute, should call grecaptcha.execute with the widget id", () => {
+  it("execute, should call grecaptcha.enterprise.execute with the widget id", () => {
     const WIDGET_ID = "someWidgetId";
     const grecaptchaMock = {
       render() {
@@ -88,7 +88,7 @@ describe("ReCAPTCHA", () => {
     instance._internalRef.current.execute();
     expect(grecaptchaMock.execute).toBeCalledWith(WIDGET_ID);
   });
-  it("executeAsync, should call grecaptcha.execute with the widget id", () => {
+  it("executeAsync, should call grecaptcha.enterprise.execute with the widget id", () => {
     const WIDGET_ID = "someWidgetId";
     const grecaptchaMock = {
       render() {

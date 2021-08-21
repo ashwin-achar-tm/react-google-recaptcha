@@ -1,6 +1,6 @@
 {
   "name": "react-google-recaptcha-enterprise",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "React Component Wrapper for Google Enterprise reCAPTCHA",
   "main": "lib/index.js",
   "module": "lib/esm/index.js",
