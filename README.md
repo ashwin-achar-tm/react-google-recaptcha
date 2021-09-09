@@ -1,8 +1,6 @@
 # react-google-recaptcha
 
-[![Build Status][travis.img]][travis.url] [![npm version][npm.img]][npm.url] [![npm downloads][npm.dl.img]][npm.dl.url] [![Dependencies][deps.img]][deps.url]
-
-[![Edit react-google-recaptcha example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/1y4zzjq37l)
+This is a fork of https://github.com/dozoisch/react-google-recaptcha to support enterprise recaptcha.
 
 React component for [Google reCAPTCHA v2][reCAPTCHA].
 
